@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trabajo final JS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
+</head>
+<body>
+
+
+  <nav data-aos="zoom-in">
+    <ul>
+      <!-- nombre de la pagina incluida en el menu -->
+      <li class="marca">CodeWise</li>
+      <li><a href="./index.html" class="active">Inicio</a></li>
+      <li><a href="./views/galeria.html">Galería</a></li>
+      <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+      <li><a href="./views/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección 1: Noticias -->
+  <section data-aos="zoom-out" id="noticias">
+    <h2>Noticias Recientes</h2>
+    <div id="noticias-container"></div>
+  </section>
+
+  <!--  Secciones -->
+<section data-aos="fade-up" id="bienvenida" class="banner-contenedor">
+  <div id="banner-slider" class="banner-imagen"></div>
+  <div class="contenido-texto">
+    <h2>Bienvenid@ a Groovie Style</h2>
+    <p>Somos una empresa joven, dinámica y creativa dedicada al diseño digital, desarrollo web y soluciones interactivas.</p>
+    <p>En nuestra web encontrarás información sobre nuestros productos, servicios, novedades y podrás pedir tu propio presupuesto personalizado.</p>
+  </div>
+</section>
+
+  
+<section data-aos="fade-up" id="servicios">
+  <h2>¿Qué ofrecemos?</h2>
+  <ul>
+    <li><strong>Diseño web moderno:</strong> páginas atractivas, funcionales y responsive.</li>
+    <li><strong>Aplicaciones personalizadas:</strong> soluciones a medida según tus necesidades.</li>
+    <li><strong>Soporte técnico:</strong> asistencia continua para que tu negocio no se detenga.</li>
+    <li><strong>Branding y diseño gráfico:</strong> identidad visual profesional para tu marca.</li>
+  </ul>
+</section>
+
+
+<section data-aos="fade-up" id="equipo">
+  <h2>Conoce a nuestro equipo</h2>
+  <p>En Groovie Style, trabajamos con un grupo de profesionales apasionados por el diseño y la tecnología. Nos encanta colaborar con nuestros clientes para lograr resultados auténticos y de impacto.</p>
+  <p>Desde desarrolladores web hasta creativos de contenido, nuestro equipo está preparado para transformar tus ideas en soluciones reales.</p>
+  <p><em>“No solo hacemos webs. Creamos experiencias digitales.”</em></p>
+</section>
+
+
+  <!-- Footer -->
+ <footer>
+  <p>Síguenos en redes:
+    
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  </p>
+
+  <p>Dirección: Calle Ficticia 123, Ciudad Imaginaria</p>
+  <p><a href="#">Aviso legal</a></p>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 2000,            
+    easing: 'ease-in-out', 
+  });
+</script>
+<script src="./js/index.js"></script>
+</body>
+</html>

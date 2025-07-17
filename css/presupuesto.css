@@ -1,0 +1,244 @@
+
+:root {
+  --color-principal: #2C3E50; 
+  --color-secundario: #E74C3C; 
+  --color-terciario: #F1C40F; 
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+
+body {
+  background-image: url('../assets/images/imagenPresupuesto.jpg');
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--blanco);
+  color: var(--color-principal);
+  padding-top: 60px; 
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 0 400px;
+}
+
+
+nav ul .marca {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--blanco);
+  margin-right: auto;
+  padding: 15px 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 15px 0;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 3px solid var(--color-secundario);
+}
+
+/* _________________________________ */
+/* === FORMULARIO DE PRESUPUESTO === */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(6px); 
+  color: var(--blanco); 
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    color: #f8f8f8;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#f8f8f8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--color-principal);
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#total {
+  font-size: 1.4rem;
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-secundario);
+}
+
+
+/* === Footer siempre al pie === */
+footer {
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+footer a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+/* Ajustes para tablets y móviles */
+@media (max-width: 768px) {
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 5px 0; 
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px 10px; 
+    border-bottom-width: 2px;
+  }
+
+  
+ form {
+  max-width: 90%;
+  padding: 20px;
+  margin: 80px auto 30px auto; 
+  box-sizing: border-box;
+}
+
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+ 
+  footer {
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+  }
+}
+
+

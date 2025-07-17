@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "titulo": " Lanzamiento de nuestra nueva web",
+    "fecha": "2025-07-01",
+    "autor": "Equipo Web",
+    "contenido": "Hoy lanzamos nuestra nueva página con un diseño renovado, compatible con móviles y con muchas novedades."
+  },
+  {
+    "id": 2,
+    "titulo": " Promoción de verano 2025",
+    "fecha": "2025-06-15",
+    "autor": "Departamento Comercial",
+    "contenido": "Durante el mes de julio, todos nuestros productos tendrán un 20% de descuento para nuevos clientes."
+  },
+  {
+    "id": 3,
+    "titulo": "Nueva sede en Barcelona",
+    "fecha": "2025-05-20",
+    "autor": "RRHH",
+    "contenido": "Nos alegra anunciar que abrimos una nueva oficina en Barcelona, mejorando así la atención en la zona noreste."
+  },
+  {
+    "id": 4,
+    "titulo": "Lanzamiento del nuevo procesador QuantumX",
+    "fecha": "2025-07-10",
+    "autor": "Tech News",
+    "contenido": "QuantumTech presenta el procesador QuantumX, que promete revolucionar la velocidad y eficiencia energética en computación."
+  },
+  {
+    "id": 5,
+    "titulo": "Avances en inteligencia artificial conversacional",
+    "fecha": "2025-07-05",
+    "autor": "AI Research",
+    "contenido": "Los últimos modelos de IA conversacional han mejorado notablemente la comprensión del lenguaje natural y la interacción humana."
+  },
+  {
+    "id": 6,
+    "titulo": "Red 6G: el futuro de las telecomunicaciones",
+    "fecha": "2025-06-28",
+    "autor": "Telecom Daily",
+    "contenido": "Se están realizando pruebas iniciales de la red 6G que promete velocidades hasta 100 veces superiores a la 5G actual, con menor latencia."
+  }
+]
+

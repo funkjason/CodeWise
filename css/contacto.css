@@ -1,0 +1,146 @@
+
+:root {
+  --color-principal: #2C3E50; 
+  --color-secundario: #E74C3C; 
+  --color-terciario: #F1C40F;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+h2{
+    text-align: center;
+    color: #f8f8f8;
+}
+
+body {
+  background-image: url('../assets/images/imagenContacto.png');
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--blanco);
+  color: var(--color-principal);
+  padding-top: 60px;
+}
+
+/* === Navegación fija en top === */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 0 400px;
+}
+
+
+nav ul .marca {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--blanco);
+  margin-right: auto;
+  padding: 15px 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 15px 0;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 3px solid var(--color-secundario);
+}
+
+
+
+
+
+.info-contacto {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.25rem;
+  border: .0625rem solid #ccc;
+  border-radius: .5rem;
+  margin-bottom: 1.875rem;
+  max-width: 43.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(4px); 
+}
+
+.info-contacto p {
+  margin-bottom: .625rem;
+}
+
+#mapa {
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #2e7d32;
+}
+
+
+/* === Footer === */
+footer {
+  background-color: var(--color-principal);
+  color: var(--blanco);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+footer a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+
+

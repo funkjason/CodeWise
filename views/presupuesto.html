@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto | Trabajo final</title>
+  <link rel ="stylesheet" href="../css/presupuesto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li class="marca">CodeWise</li>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./galeria.html">Galería</a></li>
+      <li><a href="./presupuesto.html" class="active">Presupuesto</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  
+  <main>
+    <section>
+      <h2>Solicita tu presupuesto</h2>
+
+      <form id="form-presupuesto">
+        
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" maxlength="15" required>
+
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono" maxlength="9" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+
+       
+        <fieldset>
+          <legend>Opciones de presupuesto</legend>
+
+          <label for="producto">Producto:</label>
+          <select id="producto" name="producto">
+            <option value="300">Página web básica - 300€</option>
+            <option value="500">Tienda online - 500€</option>
+            <option value="800">App móvil - 800€</option>
+          </select>
+
+          <label for="plazo">Plazo de entrega (en días):</label>
+          <input type="number" id="plazo" name="plazo" min="1" required>
+
+          <p>Extras:</p>
+          <label><input type="checkbox" class="extra" value="50"> SEO avanzado (+50€)</label>
+          <label><input type="checkbox" class="extra" value="100"> Mantenimiento anual (+100€)</label>
+          <label><input type="checkbox" class="extra" value="150"> Diseño premium (+150€)</label>
+
+          <p><strong>Total estimado:</strong> <span id="total">0€</span></p>
+        </fieldset>
+
+
+        <fieldset>
+          <label>
+            <input type="checkbox" id="condiciones" required>
+            Acepto las condiciones de privacidad
+          </label>
+
+          <div style="margin-top: 10px;">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>Síguenos en redes:
+
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </p>
+
+    <p>Dirección: Calle Ficticia 123, Ciudad Imaginaria</p>
+    <p><a href="#">Aviso legal</a></p>
+  </footer>
+
+  <script src="../js/scriptPresupuesto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contacto | trabajo final</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+  <!-- Geocoder CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+  <link rel="stylesheet" href="../css/contacto.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <nav data-aos="zoom-in">
+    <ul>
+      <li class="marca">CodeWise</li>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./galeria.html">Galería</a></li>
+      <li><a href="./presupuesto.html">Presupuesto</a></li>
+      <li><a href="./contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contacto y Ubicación</h2>
+
+      <div data-aos="fade-down" class="info-contacto">
+        <p><strong>Nombre de la empresa:</strong> Groovie-Style</p>
+        <p><strong>Dirección:</strong> Calle del Ritmo, 123, Ciudad Barcelona</p>
+        <p><strong>Teléfono:</strong> 900 123 456</p>
+        <p><strong>Correo:</strong> contacto@grooviestyle.com</p>
+      </div>
+
+      <div id="mapa" class="mapa"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes:
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </p>
+
+    <p>Dirección: Calle Ficticia 123, Ciudad Imaginaria</p>
+    <p><a href="#">Aviso legal</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="../js/scriptContacto.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
+</body>
+
+</html>
