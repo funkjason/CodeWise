@@ -186,7 +186,7 @@ footer a {
   margin: 0 10px;
 }
 
-/* === RESPONSIVE SOLO PARA MÓVIL REAL (máx 600px) === */
+/* === RESPONSIVE */
 @media (max-width: 600px) {
   .hamburguesa {
     display: block;

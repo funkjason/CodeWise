@@ -32,7 +32,7 @@ let controlRuta = L.Routing.control({
   show: false, 
 }).addTo(map);
 
-// Actualizar la ruta 
+
 markerCliente.on('dragend', function () {
   controlRuta.setWaypoints([
     markerCliente.getLatLng(),
@@ -47,15 +47,15 @@ L.Control.geocoder({
   .on('markgeocode', function(e) {
     const coords = e.geocode.center;
 
-    // Mover el marcador del cliente a la nueva dirección
+    
     markerCliente.setLatLng(coords)
       .setPopupContent("Ubicación seleccionada")
       .openPopup();
 
-    // Centrar el mapa en esa ubicación
+   
     map.setView(coords, 15);
 
-    // Actualizar ruta
+  
     controlRuta.setWaypoints([
       markerCliente.getLatLng(),
       L.latLng(empresaCoords)

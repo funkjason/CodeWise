@@ -24,7 +24,7 @@ function calcularPresupuesto() {
   // Descuento si el plazo es corto
   const plazoValor = parseInt(plazo.value);
   if (plazoValor && plazoValor <= 7) {
-    subtotal *= 0.9; // 10% de descuento
+    subtotal *= 0.9; 
   }
 
   total.textContent = `${subtotal.toFixed(2)}€`;
