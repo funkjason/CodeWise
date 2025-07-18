@@ -20,6 +20,7 @@ body {
   padding-top: 60px;
 }
 
+/* === NAV GENERAL === */
 nav {
   position: fixed;
   top: 0;
@@ -27,31 +28,26 @@ nav {
   background-color: var(--color-principal);
   color: var(--blanco);
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-nav ul {
+.nav-contenedor {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
   list-style: none;
-  justify-content: center;
-  padding: 0 400px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-
-nav ul .marca {
-  font-weight: bold;
-  font-size: 25px;
-  color: var(--blanco);
-  margin-right: auto;
-  padding: 15px 0;
-}
-
-nav li {
-  margin: 0 20px;
-}
-
-nav a {
+.menu li a {
   color: var(--blanco);
   text-decoration: none;
   padding: 15px 0;
@@ -59,12 +55,34 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active {
+.menu li a:hover,
+.menu li a.active {
   border-bottom: 3px solid var(--color-secundario);
 }
 
-/* === Secciones generales === */
+.marca {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--blanco);
+  padding: 15px 0;
+}
+
+/* === HAMBURGUESA OCULTA POR DEFECTO === */
+.toggle-input {
+  display: none;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 28px;
+  color: var(--blanco);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+/* === SECCIONES === */
 section {
   padding: 40px 20px;
   max-width: 1000px;
@@ -77,7 +95,7 @@ h2 {
   text-align: center;
 }
 
-/* === Carrusel Noticias === */
+/* === NOTICIAS === */
 #noticias-container {
   display: flex;
   flex-wrap: nowrap;
@@ -107,7 +125,7 @@ h2 {
   }
 }
 
-/* === Banner con imagen de fondo === */
+/* === BANNER === */
 .banner-contenedor {
   position: relative;
   display: flex;
@@ -143,7 +161,7 @@ h2 {
   border-radius: 5px;
 }
 
-/* === Footer global === */
+/* === FOOTER === */
 footer {
   background-color: var(--color-principal);
   color: var(--blanco);
@@ -168,19 +186,50 @@ footer a {
   margin: 0 10px;
 }
 
-/* === Responsive para tablets y móviles === */
-@media (max-width: 768px) {
-  nav ul {
+/* === RESPONSIVE SOLO PARA MÓVIL REAL (máx 600px) === */
+@media (max-width: 600px) {
+  .hamburguesa {
+    display: block;
+  }
+
+  .menu {
+    display: none;
     flex-direction: column;
+    background-color: var(--color-principal);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .toggle-input:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .menu a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .marca {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .nav-contenedor {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  nav ul .marca {
-    margin-right: 0;
-  }
-
-  nav li {
-    margin: 10px 0;
+    padding: 0 15px;
+    position: relative;
   }
 
   section {
@@ -211,5 +260,9 @@ footer a {
 
   footer i {
     margin: 0 10px;
+  }
+
+  body {
+    padding-top: 60px;
   }
 }

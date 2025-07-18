@@ -7,31 +7,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
 </head>
 <body>
 
-
-  <nav data-aos="zoom-in">
-    <ul>
-      <!-- nombre de la pagina incluida en el menu -->
-      <li class="marca">CodeWise</li>
+<nav data-aos="zoom-in">
+  <div class="nav-contenedor">
+    <input type="checkbox" id="toggle-menu" class="toggle-input" />
+    <label for="toggle-menu" class="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </label>
+    <span class="marca">CodeWise</span>
+    <ul class="menu">
       <li><a href="./index.html" class="active">Inicio</a></li>
       <li><a href="./views/galeria.html">Galería</a></li>
       <li><a href="./views/presupuesto.html">Presupuesto</a></li>
       <li><a href="./views/contacto.html">Contacto</a></li>
     </ul>
-  </nav>
 
-  <!-- Sección 1: Noticias -->
+  </div>
+</nav>
+
+
+ 
   <section data-aos="zoom-out" id="noticias">
     <h2>Noticias Recientes</h2>
     <div id="noticias-container"></div>
   </section>
 
-  <!--  Secciones -->
+  
 <section data-aos="fade-up" id="bienvenida" class="banner-contenedor">
   <div id="banner-slider" class="banner-imagen"></div>
   <div class="contenido-texto">

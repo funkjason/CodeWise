@@ -144,3 +144,89 @@ footer a {
 
 
 
+/* ========== MENÚ RESPONSIVE HAMBURGUESA ========== */
+
+/* Oculta el checkbox */
+.toggle-input {
+  display: none;
+}
+
+/* Estilo botón hamburguesa */
+.hamburguesa {
+  display: none;
+  font-size: 26px;
+  color: var(--blanco);
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Asegurar distribución entre marca y menú */
+.nav-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+}
+
+/* Estilo por defecto del menú */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* === RESPONSIVE SOLO PARA MÓVILES === */
+@media (max-width: 600px) {
+  
+  .hamburguesa {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-principal);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Mostrar menú cuando checkbox está activado */
+  .toggle-input:checked + .hamburguesa + .marca + .menu {
+    display: flex;
+  }
+
+  /* Espaciado entre enlaces */
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    color: var(--blanco);
+    text-decoration: none;
+  }
+
+  /* Ajuste de marca centrada */
+  .marca {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Eliminar padding global para ul original */
+  nav ul {
+    padding: 0;
+  }
+}

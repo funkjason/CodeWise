@@ -5,12 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contacto | trabajo final</title>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
-  <!-- Geocoder CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
   <link rel="stylesheet" href="../css/contacto.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
@@ -18,14 +16,21 @@
 
 <body>
   <nav data-aos="zoom-in">
-    <ul>
-      <li class="marca">CodeWise</li>
+  <div class="nav-contenedor">
+    <input type="checkbox" id="toggle-menu" class="toggle-input" />
+    <label for="toggle-menu" class="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </label>
+    <span class="marca">CodeWise</span>
+    <ul class="menu">
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="./galeria.html">Galería</a></li>
       <li><a href="./presupuesto.html">Presupuesto</a></li>
       <li><a href="./contacto.html" class="active">Contacto</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <main>
     <section>
